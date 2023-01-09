@@ -30,7 +30,7 @@ public class MainBotController {
     public static void startBot() throws LoginException {
         LOGGER.info("Comenzando creacion del bot");
         Utilities utils = new Utilities();
-        JDA bot = JDABuilder.createDefault(utils.getResource("sparkles.token", "luaConfig.properties")).setActivity(Activity.playing(utils.getResource("sparkles.action", "SparklesConfig.properties"))).build();
+        JDA bot = JDABuilder.createDefault(utils.getResource("lua.token", "luaConfig.properties")).setActivity(Activity.playing(utils.getResource("lua.action", "luaConfig.properties"))).build();
         MessageController mc = new MessageController();
         ChannelController cc = new ChannelController();
         ReadyController rc = new ReadyController();
